@@ -1,0 +1,131 @@
+// ===============================================================
+// Assumed Data Model
+// ===============================================================
+//
+// Collection: users
+// Document ID: userId
+// Fields:
+//   - uid: string (required) - User ID
+//   - email: string (required) - User email
+//   - displayName: string (optional) - User display name
+//   - photoURL: string (optional) - User photo URL
+//   - role: string (required, enum: ['user', 'admin']) - User role
+//   - createdAt: timestamp (required) - Creation time
+//
+// Collection: jobs
+// Document ID: jobId
+// Fields:
+//   - title: string (required) - Job title
+//   - description: string (required) - Job description
+//   - category: string (required) - Job category
+//   - salary: string (required) - Salary range
+//   - location: string (required) - Job location
+//   - duration: string (required) - Contract duration
+//   - imageUrl: string (optional) - Job image URL
+//   - createdAt: timestamp (required) - Creation time
+//
+// Collection: applications
+// Document ID: applicationId
+// Fields:
+//   - jobId: string (required) - Job ID
+//   - userId: string (required) - User ID
+//   - status: string (required, enum: ['pending', 'reviewed', 'accepted', 'rejected']) - Application status
+//   - fullName: string (required) - Applicant's full name
+//   - phone: string (required) - Applicant's phone number
+//   - email: string (required) - Applicant's email
+//   - interest: string (optional) - Applicant's area of interest
+//   - city: string (optional) - Applicant's current city
+//   - createdAt: timestamp (required) - Submission time
+//
+// ===============================================================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          (request.auth.token.email == "huynguyen.neu.83@gmail.com" && request.auth.token.email_verified == true));
+    }
+
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function isValidEmail(email) {
+      return email is string && email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    function validStringLength(field, minLen, maxLen) {
+      return request.resource.data[field] is string &&
+        request.resource.data[field].size() >= minLen &&
+        request.resource.data[field].size() <= maxLen;
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    function isValidUser(data) {
+      return hasOnlyAllowedFields(['uid', 'email', 'displayName', 'photoURL', 'role', 'createdAt']) &&
+             data.uid == request.auth.uid &&
+             isValidEmail(data.email) &&
+             data.role in ['user', 'admin'] &&
+             data.createdAt is timestamp;
+    }
+
+    function isValidJob(data) {
+      return hasOnlyAllowedFields(['title', 'description', 'category', 'salary', 'location', 'duration', 'imageUrl', 'createdAt']) &&
+             validStringLength('title', 1, 100) &&
+             validStringLength('description', 1, 5000) &&
+             data.createdAt is timestamp;
+    }
+
+    function isValidApplication(data) {
+      return hasOnlyAllowedFields(['jobId', 'userId', 'status', 'fullName', 'phone', 'email', 'interest', 'city', 'createdAt']) &&
+             data.userId == request.auth.uid &&
+             data.status in ['pending', 'reviewed', 'accepted', 'rejected'] &&
+             isValidEmail(data.email) &&
+             data.createdAt is timestamp;
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================
+
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId) && isValidUser(request.resource.data) && request.resource.data.role == 'user';
+      allow update: if (isOwner(userId) && isValidUser(request.resource.data) && request.resource.data.role == resource.data.role) || isAdmin();
+    }
+
+    match /jobs/{jobId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin() && isValidJob(request.resource.data);
+    }
+
+    match /applications/{applicationId} {
+      allow read: if isAuthenticated() && (resource.data.userId == request.auth.uid || isAdmin());
+      allow create: if isAuthenticated() && isValidApplication(request.resource.data) && request.resource.data.status == 'pending';
+      allow update: if isAdmin() && isValidApplication(request.resource.data);
+      allow delete: if isAdmin();
+    }
+  }
+}
