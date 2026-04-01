@@ -178,21 +178,21 @@ export default function Layout({ children }: LayoutProps) {
 
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-12">
               <div>
-                <h4 className="text-[#7efba4] font-black uppercase text-[10px] tracking-[0.3em] mb-8">Định vị nội dung</h4>
+                <h4 className="text-[#7efba4] font-black uppercase text-[10px] tracking-[0.3em] mb-8">Người lao động cần biết</h4>
                 <div className="space-y-6">
                   <div className="flex gap-4">
                     <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center shrink-0">
                       <Home className="w-4 h-4 text-white/40" />
                     </div>
                     <p className="text-sm text-white/70 leading-relaxed">
-                      Nhật Bản là mảng dịch vụ cốt lõi. Nga là thị trường được JAVICO đẩy mạnh nội dung, SEO và tư vấn trong giai đoạn 2026.
+                      Nếu bạn đang tìm hiểu đi Nga làm việc, trang này tập trung trả lời những câu quan trọng nhất: có phù hợp không, hồ sơ gồm gì, chi phí nhìn thế nào và trước khi bay cần chuẩn bị gì.
                     </p>
                   </div>
                   <div className="flex gap-4">
                     <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center shrink-0">
                       <ShieldCheck className="w-4 h-4 text-white/40" />
                     </div>
-                    <p className="text-sm text-white/70">Thông tin trên trang ưu tiên sự rõ ràng về hồ sơ, quy trình, lưu ý trước và sau xuất cảnh.</p>
+                    <p className="text-sm text-white/70">Nội dung được viết theo hướng dễ dùng cho người lao động và gia đình: rõ hồ sơ, rõ quy trình, rõ lưu ý trước và sau xuất cảnh.</p>
                   </div>
                 </div>
               </div>

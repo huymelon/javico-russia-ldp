@@ -137,11 +137,11 @@ export default function Home() {
               <span className="text-[10px] font-black text-white uppercase tracking-[0.2em]">Giấy phép 793/GP-LDTBXH</span>
             </motion.div>
             <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-10 tracking-tight font-['Manrope']">
-              Xuất Khẩu Lao Động <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7efba4] to-[#9eeab3]">Nga 2026</span>
+              Đi Nga Làm Việc <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7efba4] to-[#9eeab3]">Cần Chuẩn Bị Gì?</span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-white/60 text-xl mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-              JAVICO xây trang này để người lao động và gia đình hiểu thị trường Nga theo hướng thực tế hơn: quy trình ra sao, hồ sơ gồm gì, cần chuẩn bị gì trước và sau xuất cảnh.
+              Trang này dành cho người đang tính đi Nga và cho cả gia đình. Bạn sẽ thấy rõ: có hợp đi không, hồ sơ gồm gì, chi phí hỏi thế nào, và sang bên đó những ngày đầu sẽ làm gì.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
               <Button variant="tertiary" size="lg" className="px-12 h-16 rounded-full text-sm font-black uppercase tracking-widest shadow-2xl shadow-[#7efba4]/20" onClick={() => { const el = document.getElementById('apply-form'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }}>
@@ -166,7 +166,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-4xl font-black text-[#003a59] tracking-tighter">8 bước</p>
-                  <p className="text-[10px] uppercase font-black text-[#737784] tracking-[0.2em]">Khung quy trình rõ ràng</p>
+                  <p className="text-[10px] uppercase font-black text-[#737784] tracking-[0.2em]">Từ đăng ký đến xuất cảnh</p>
                 </div>
               </div>
             </div>
@@ -181,19 +181,19 @@ export default function Home() {
               {
                 icon: <FileText className="w-10 h-10 text-[#7efba4]" />,
                 title: 'Hồ sơ 2 đợt',
-                desc: 'Nội dung được sắp theo logic hồ sơ đợt 1, hồ sơ đợt 2 và các mốc cần hoàn thiện.',
+                desc: 'Biết đợt 1 nộp gì, đợt 2 bổ sung gì để không bị rối giấy tờ.',
                 color: 'bg-[#003a59]',
               },
               {
                 icon: <GraduationCap className="w-10 h-10 text-[#7efba4]" />,
                 title: 'Có đào tạo trước đi',
-                desc: 'Nhấn mạnh phần định hướng và tiếng Nga cơ bản để người lao động hình dung rõ hơn trước xuất cảnh.',
+                desc: 'Có phần định hướng và tiếng Nga cơ bản để đỡ bỡ ngỡ trước ngày bay.',
                 color: 'bg-[#00401e]',
               },
               {
                 icon: <PlaneTakeoff className="w-10 h-10 text-[#7efba4]" />,
                 title: 'Rõ sau nhập cảnh',
-                desc: 'Giải thích giai đoạn trung chuyển, khám sức khỏe, giấy phép lao động, ngân hàng và sim.',
+                desc: 'Biết trước giai đoạn trung chuyển, khám sức khỏe, làm giấy tờ, sim và ngân hàng.',
                 color: 'bg-[#195175]',
               },
             ].map((stat, idx) => (
@@ -212,31 +212,31 @@ export default function Home() {
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
             <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-8">
               <span className="w-2 h-2 bg-[#7efba4] rounded-full animate-pulse" />
-              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Vì sao người lao động tìm hiểu Nga?</span>
+              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Vì sao nhiều người tìm kiếm đi Nga làm việc?</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-black text-[#003a59] mb-8 font-['Manrope'] leading-[0.9] tracking-tighter">
-              Một thị trường <br />
-              <span className="text-[#00401e]">cần được giải thích rõ</span>
+              Đi Nga Làm Việc <br />
+              <span className="text-[#00401e]">Cần Hiểu Gì Trước?</span>
             </h2>
             <p className="text-[#434653]/70 mb-12 leading-relaxed text-xl max-w-xl font-medium">
-              Đi Nga không nên được kể theo kiểu “việc nhẹ lương cao”. Điều người xem cần hơn là biết nhóm việc nào phù hợp, hồ sơ ra sao, cần chuẩn bị gì và sau khi nhập cảnh sẽ trải qua những bước nào.
+              Người lao động thường quan tâm 4 việc trước tiên: mình có hợp đi Nga không, hồ sơ cần những gì, chi phí có những khoản nào và sang bên đó phải làm gì trong những ngày đầu.
             </p>
             <div className="grid gap-10">
               {[
                 {
                   icon: <CreditCard className="w-8 h-8 text-[#003a59]" />,
-                  title: 'Hiểu đúng bài toán chi phí và thu nhập',
-                  desc: 'Không chốt con số chung cho mọi hồ sơ. Chi phí và thu nhập cần được giải thích theo từng đơn hàng, từng giai đoạn và từng mức độ phù hợp.',
+                  title: 'Chi phí bao nhiêu là thật?',
+                  desc: 'Không nên nghe một con số chung. Cần hỏi rõ từng khoản, từng giai đoạn và khi nào phải đóng.',
                 },
                 {
                   icon: <ShieldCheck className="w-8 h-8 text-[#003a59]" />,
-                  title: 'Ưu tiên sự rõ ràng về pháp lý và quy trình',
-                  desc: 'Người lao động quan tâm điều kiện, hồ sơ, phỏng vấn, đào tạo và thủ tục đầu vào hơn là các slogan hứa hẹn.',
+                  title: 'Đi có an toàn không?',
+                  desc: 'Phải nhìn vào doanh nghiệp có giấy phép, quy trình rõ ràng, giấy tờ minh bạch và cách hướng dẫn trước khi bay.',
                 },
                 {
                   icon: <Users className="w-8 h-8 text-[#003a59]" />,
-                  title: 'Nội dung phù hợp cả ứng viên và gia đình',
-                  desc: 'Gia đình thường là người cùng ra quyết định, nên trang cần nói rõ các mốc và checklist để họ hiểu và theo dõi.',
+                  title: 'Gia đình cần biết gì?',
+                  desc: 'Không chỉ người đi đọc. Bố mẹ, vợ chồng cũng cần hiểu hồ sơ, chi phí, lịch trình và rủi ro thực tế.',
                 },
               ].map((item, idx) => (
                 <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }} className="flex gap-8 items-start group">
@@ -256,8 +256,8 @@ export default function Home() {
               <img src="/images/russia-city.png" alt="Hình ảnh thị trường và đời sống tại Nga" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#003a59] via-transparent to-transparent opacity-60" />
               <div className="absolute bottom-12 left-12 right-12 text-white">
-                <p className="text-6xl font-black mb-4 tracking-tighter">2026</p>
-                <p className="text-xs font-black uppercase tracking-[0.3em] opacity-80">Năm đẩy mạnh nội dung thị trường Nga</p>
+                <p className="text-6xl font-black mb-4 tracking-tighter">Nga</p>
+                <p className="text-xs font-black uppercase tracking-[0.3em] opacity-80">Việc gì, hồ sơ gì, chuẩn bị gì</p>
               </div>
             </div>
             <div className="absolute -top-20 -left-20 w-80 h-80 bg-[#7efba4] rounded-full mix-blend-multiply filter blur-[80px] opacity-20 animate-pulse" />
@@ -271,16 +271,16 @@ export default function Home() {
           <div className="bg-[#f8fafb] rounded-[3rem] p-10 md:p-14 border border-[#003a59]/5 shadow-xl shadow-[#003a59]/5">
             <div className="flex items-center gap-3 mb-8">
               <Info className="w-5 h-5 text-[#003a59]" />
-              <h2 className="text-3xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Nội dung chính của trang</h2>
+              <h2 className="text-3xl font-black text-[#003a59] font-['Manrope'] tracking-tight">4 câu người đi Nga hay hỏi nhất</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm font-bold text-[#003a59]">
               {[
-                'Tổng quan thị trường lao động Nga',
-                'Điều kiện và hồ sơ đi Nga 2026',
-                'Chi phí và cách hiểu đúng thu nhập',
-                'Nhóm việc và đối tượng phù hợp',
-                'Quy trình 8 bước theo handbook',
-                'Cách chọn công ty XKLĐ uy tín',
+                'Tôi có hợp đi Nga không?',
+                'Hồ sơ đi Nga gồm những giấy tờ nào?',
+                'Chi phí đi Nga hỏi thế nào cho đúng?',
+                'Sang Nga rồi những ngày đầu làm gì?',
+                'Nữ đi Nga được không?',
+                'Có nên vay tiền để đi không?',
               ].map((item) => (
                 <div key={item} className="bg-white rounded-2xl px-5 py-4 border border-[#003a59]/5">
                   {item}
@@ -298,24 +298,24 @@ export default function Home() {
               <ClipboardCheck className="w-4 h-4 text-[#003a59]" />
               <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Điều kiện đi lao động Nga</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Điều Kiện Và Hồ Sơ <span className="text-[#00401e]">Cần Hiểu</span></h2>
-            <p className="text-[#434653]/60 text-xl font-medium max-w-3xl mx-auto mt-6">Các trang top thường lên rất tốt vì họ phủ đúng intent người dùng: độ tuổi, sức khỏe, hồ sơ, chi phí và quy trình. Với JAVICO, phần này nên giải thích rõ nhưng không hứa quá mức.</p>
+            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Điều Kiện Đi Lao Động Nga Và <span className="text-[#00401e]">Hồ Sơ Cần Chuẩn Bị</span></h2>
+            <p className="text-[#434653]/60 text-xl font-medium max-w-3xl mx-auto mt-6">Nếu bạn đang tìm hiểu đi Nga, đây là phần cần đọc kỹ nhất: điều kiện cơ bản ra sao, hồ sơ chia mấy đợt và gia đình cần chuẩn bị những giấy tờ gì trước khi nộp.</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-10">
             <Card className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10 md:p-14">
-              <h3 className="text-3xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">Điều kiện cơ bản</h3>
+              <h3 className="text-3xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">Điều kiện đi Nga cơ bản</h3>
               <div className="space-y-5 text-[#434653] leading-relaxed font-medium">
-                <p>Độ tuổi, giới tính và yêu cầu tay nghề sẽ thay đổi theo từng đơn hàng tiếp nhận.</p>
-                <p>Người lao động cần đảm bảo sức khỏe và hồ sơ cá nhân rõ ràng trước khi tham gia phỏng vấn.</p>
-                <p>Với một số nhóm việc, ứng viên chưa biết tiếng Nga vẫn có thể bắt đầu từ đào tạo định hướng và tiếng Nga cơ bản trước khi xuất cảnh.</p>
+                <p>Độ tuổi, giới tính và yêu cầu tay nghề sẽ thay đổi theo từng đơn hàng tiếp nhận, nên không phải ai cũng giống ai.</p>
+                <p>Người lao động cần đảm bảo sức khỏe, giấy tờ cá nhân rõ ràng và sẵn sàng tham gia phỏng vấn theo hướng dẫn.</p>
+                <p>Nếu chưa biết tiếng Nga, nhiều hồ sơ vẫn có thể bắt đầu từ đào tạo định hướng và tiếng Nga cơ bản trước khi xuất cảnh.</p>
               </div>
             </Card>
             <Card className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10 md:p-14">
-              <h3 className="text-3xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">Hồ sơ theo 2 đợt</h3>
+              <h3 className="text-3xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">Hồ sơ đi Nga chia 2 đợt</h3>
               <div className="space-y-5 text-[#434653] leading-relaxed font-medium">
-                <p>Hồ sơ đợt 1 thường gồm hộ chiếu, CCCD, khám sức khỏe, ảnh và các giấy tờ nền tảng theo hướng dẫn.</p>
-                <p>Hồ sơ đợt 2 thường bổ sung lý lịch tư pháp số 2, sơ yếu lý lịch xác nhận, bằng cấp công chứng và các giấy tờ liên quan.</p>
-                <p>Cách tách hồ sơ theo giai đoạn giúp người lao động chủ động chuẩn bị và gia đình dễ theo dõi tiến độ hơn.</p>
+                <p>Đợt 1 thường là hộ chiếu, CCCD, khám sức khỏe, ảnh và các giấy tờ nền tảng cần nộp sớm sau khi trúng tuyển.</p>
+                <p>Đợt 2 thường bổ sung lý lịch tư pháp số 2, sơ yếu lý lịch xác nhận, bằng cấp công chứng và các giấy tờ liên quan.</p>
+                <p>Tách hồ sơ làm 2 đợt giúp người lao động đỡ áp lực và gia đình dễ theo dõi tiến độ hơn.</p>
               </div>
             </Card>
           </div>
@@ -329,13 +329,13 @@ export default function Home() {
               <CreditCard className="w-4 h-4 text-[#003a59]" />
               <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Chi phí và thu nhập</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Chi Phí Đi Nga Và <span className="text-[#00401e]">Cách Đọc Thu Nhập</span></h2>
+            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Chi Phí Đi Lao Động Nga Và <span className="text-[#00401e]">Thu Nhập Thực Tế</span></h2>
           </div>
           <div className="grid lg:grid-cols-3 gap-8">
             {[
-              { title: 'Chi phí không nên hỏi chung một con số', desc: 'Mỗi đơn hàng, mỗi nhóm việc và từng giai đoạn hồ sơ có thể có cấu trúc chi phí khác nhau. Người lao động cần được giải thích khoản nào cố định, khoản nào phát sinh.' },
-              { title: 'Thu nhập cần nhìn theo thực tế làm việc', desc: 'Không chỉ nhìn lương niêm yết. Nên hỏi thêm giờ làm, tăng ca, chỗ ở, sinh hoạt và khả năng gửi tiền về để hiểu thu nhập ròng.' },
-              { title: 'Gia đình nên tính bài toán hoàn vốn', desc: 'Một trang tốt không chỉ nói cơ hội mà còn giúp gia đình hình dung nợ, thời gian hoàn vốn và ngưỡng chịu đựng rủi ro tài chính.' },
+              { title: 'Đừng hỏi một con số cho tất cả', desc: 'Mỗi đơn hàng và từng giai đoạn hồ sơ có thể có mức chi phí khác nhau. Hỏi rõ từng khoản thì mới đỡ bị mù mờ.' },
+              { title: 'Đừng chỉ nhìn mức lương', desc: 'Cần hỏi thêm giờ làm, tăng ca, chỗ ở, sinh hoạt và số tiền thật sự có thể gửi về hoặc để dành.' },
+              { title: 'Đi vay để đi thì phải tính trước', desc: 'Gia đình nên tính thời gian hoàn vốn, số nợ phải chịu và tình huống công việc không đúng như mình tưởng.' },
             ].map((item) => (
               <Card key={item.title} className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10">
                 <h3 className="text-2xl font-black text-[#003a59] mb-5 font-['Manrope'] tracking-tight">{item.title}</h3>
@@ -353,25 +353,25 @@ export default function Home() {
               <ShieldCheck className="w-4 h-4 text-[#003a59]" />
               <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Cách chọn công ty uy tín</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Chọn Đơn Vị Tư Vấn <span className="text-[#00401e]">Như Thế Nào</span></h2>
+            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Cách Chọn Công Ty XKLĐ Nga <span className="text-[#00401e]">Uy Tín</span></h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <Card className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10 md:p-14">
-              <h3 className="text-3xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">Checklist cần kiểm tra</h3>
+              <h3 className="text-3xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">4 điều nên kiểm tra trước khi nộp hồ sơ</h3>
               <div className="space-y-5 text-[#434653] leading-relaxed font-medium">
-                <p>Có giấy phép hoạt động và hiện diện pháp lý rõ ràng.</p>
-                <p>Hợp đồng, quy trình, chi phí và nghĩa vụ các bên được giải thích minh bạch.</p>
-                <p>Không thúc ép đóng tiền khi chưa hiểu rõ đơn hàng hoặc chưa có lộ trình hồ sơ cụ thể.</p>
-                <p>Có website chính thức, thông tin liên hệ rõ, nội dung tư vấn nhất quán giữa trang dịch vụ và bài viết.</p>
+                <p>Có giấy phép hoạt động và địa chỉ, thông tin pháp lý rõ ràng.</p>
+                <p>Hợp đồng, quy trình, chi phí và trách nhiệm hai bên được nói rõ ngay từ đầu.</p>
+                <p>Không thúc ép đóng tiền khi bạn chưa hiểu đơn hàng hoặc chưa nắm lộ trình hồ sơ.</p>
+                <p>Có website chính thức, thông tin liên hệ rõ và nội dung tư vấn nhất quán.</p>
               </div>
             </Card>
             <Card className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10 md:p-14 bg-[#003a59] text-white">
-              <h3 className="text-3xl font-black mb-8 font-['Manrope'] tracking-tight">Trust signal mà JAVICO nên giữ</h3>
+              <h3 className="text-3xl font-black mb-8 font-['Manrope'] tracking-tight">Dấu hiệu để người lao động dễ tin hơn</h3>
               <div className="space-y-5 text-white/70 leading-relaxed font-medium">
                 <p>Giấy phép hoạt động được nhắc rõ ngay trên trang.</p>
-                <p>Nội dung đứng từ góc nhìn người lao động và gia đình, không chỉ nói “đơn hot”.</p>
-                <p>Internal link rõ sang trang chính thức, trang quy trình, bài blog chi tiết và FAQ.</p>
-                <p>Dùng nội dung nhiều chiều như các trang top, nhưng tránh sao chép claim hoặc số liệu không xác thực.</p>
+                <p>Nội dung nói theo góc nhìn người lao động và gia đình, không nói kiểu quảng cáo một chiều.</p>
+                <p>Có đường dẫn rõ sang trang chính thức, quy trình, bài viết chi tiết và phần hỏi đáp.</p>
+                <p>Thông tin cụ thể, dễ kiểm tra và không hứa quá mức.</p>
               </div>
             </Card>
           </div>
@@ -383,18 +383,18 @@ export default function Home() {
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
               <Clock className="w-4 h-4 text-[#003a59]" />
-              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">So sánh thị trường</span>
+              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">So sánh để dễ quyết định</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Nga Và Nhật: <span className="text-[#00401e]">Nên Nhìn Gì Trước</span></h2>
+            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Đi Nga Hay Đi Nhật: <span className="text-[#00401e]">Nên So Gì Trước?</span></h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10">
               <h3 className="text-3xl font-black text-[#003a59] mb-6 font-['Manrope'] tracking-tight">Nhật Bản</h3>
-              <p className="text-[#434653]/70 leading-relaxed font-medium">Là mảng dịch vụ cốt lõi của JAVICO. Phù hợp với người muốn lộ trình đã ổn định hơn, hệ sinh thái đào tạo rõ và định hướng đi theo thị trường truyền thống.</p>
+              <p className="text-[#434653]/70 leading-relaxed font-medium">Phù hợp với người muốn đi theo thị trường quen thuộc hơn, lộ trình đào tạo rõ và hệ sinh thái tư vấn ổn định hơn.</p>
             </Card>
             <Card className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10">
               <h3 className="text-3xl font-black text-[#003a59] mb-6 font-['Manrope'] tracking-tight">Nga</h3>
-              <p className="text-[#434653]/70 leading-relaxed font-medium">Phù hợp với tệp đang tìm hiểu một hướng đi thực dụng hơn, cần nội dung rõ về hồ sơ, nhóm việc, chi phí theo giai đoạn và khả năng thích nghi sau nhập cảnh.</p>
+              <p className="text-[#434653]/70 leading-relaxed font-medium">Phù hợp với người đang cân nhắc một hướng đi thực dụng hơn, muốn hiểu rõ hồ sơ, nhóm việc, chi phí và khả năng thích nghi sau nhập cảnh.</p>
             </Card>
           </div>
         </div>
@@ -405,28 +405,28 @@ export default function Home() {
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
               <ShieldCheck className="w-4 h-4 text-[#003a59]" />
-              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Intent thực tế từ người tìm kiếm</span>
+              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Những nỗi lo hay gặp</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">
               Đi Nga Có <span className="text-[#00401e]">An Toàn Không</span> Và Ai Phù Hợp?
             </h2>
             <p className="text-[#434653]/60 text-xl font-medium max-w-3xl mx-auto mt-6">
-              Bộ từ khóa và các bài blog của JAVICO cho thấy người dùng không chỉ hỏi về lương. Họ hỏi rất đời thường: đi Nga có an toàn không, nữ đi Nga được không, và trước ngày bay phải chuẩn bị những gì.
+              Khi tìm hiểu đi Nga, người lao động không chỉ hỏi lương. Họ thường hỏi rất thật: có an toàn không, nữ đi được không và trước ngày bay phải chuẩn bị những gì.
             </p>
           </div>
           <div className="grid lg:grid-cols-3 gap-8">
             {[
               {
                 title: 'Đi Nga có an toàn không?',
-                desc: 'An toàn cần được nhìn theo nhiều lớp: đi đúng doanh nghiệp có giấy phép, hiểu rõ quy trình hồ sơ, tuân thủ sân bay, giữ giấy tờ cẩn thận và không tự ý đi cùng người lạ trong giai đoạn trung chuyển.',
+                desc: 'An toàn không chỉ là chuyện ở bên đó. Phải đi đúng doanh nghiệp có giấy phép, hiểu rõ hồ sơ, giữ giấy tờ cẩn thận và làm đúng hướng dẫn ở sân bay, trung chuyển.',
               },
               {
                 title: 'Lao động nữ đi Nga được không?',
-                desc: 'Có thể phù hợp với một số nhóm việc như may mặc, hoàn thiện sản phẩm, đóng gói hoặc việc cần sự cẩn thận. Điều quan trọng là được tư vấn kỹ về môi trường, chỗ ở, ca làm và mức độ phù hợp với hồ sơ thực tế.',
+                desc: 'Có thể phù hợp với một số nhóm việc như may mặc, hoàn thiện sản phẩm, đóng gói hoặc việc cần sự cẩn thận. Quan trọng là phải hỏi kỹ môi trường làm việc, chỗ ở và ca làm.',
               },
               {
                 title: 'Đi Nga cần chuẩn bị gì trước ngày bay?',
-                desc: 'Ngoài hồ sơ, người lao động nên chuẩn bị hành lý đúng định mức 23kg ký gửi và 7kg xách tay, đồ giữ ấm, vật dụng cá nhân cần thiết, đồng thời nắm trước những lưu ý ở sân bay Việt Nam và khi nhập cảnh.',
+                desc: 'Ngoài hồ sơ, người lao động nên chuẩn bị hành lý đúng định mức, đồ giữ ấm, vật dụng cá nhân cần thiết và nắm trước những lưu ý ở sân bay Việt Nam cũng như khi nhập cảnh.',
               },
             ].map((item) => (
               <Card key={item.title} className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10 md:p-12">
@@ -446,20 +446,20 @@ export default function Home() {
           <div>
             <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
               <Briefcase className="w-4 h-4 text-[#003a59]" />
-              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Keyword cụm đi Nga làm nhà máy</span>
+              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Nhóm việc nhiều người hỏi</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight leading-[0.95]">
               Đi Nga Làm <span className="text-[#00401e]">Nhà Máy</span>: Phù Hợp Với Ai?
             </h2>
             <div className="space-y-6 mt-8 text-[#434653]/75 text-lg leading-relaxed font-medium">
               <p>
-                Đây là một trong những nhóm việc dễ hình dung nhất với người đang tìm hiểu lao động Nga. Công việc thường gắn với đóng gói, sản xuất phổ thông, hoàn thiện sản phẩm, làm theo dây chuyền hoặc theo định mức công việc rõ ràng.
+                Đây là một trong những nhóm việc dễ hình dung nhất với người đang tìm hiểu lao động Nga. Công việc thường gắn với đóng gói, sản xuất phổ thông, hoàn thiện sản phẩm hoặc làm theo dây chuyền.
               </p>
               <p>
-                Tệp quan tâm nhiều nhất là công nhân trẻ, lao động phổ thông cần tăng thu nhập, người từng làm nhà máy trong nước hoặc lao động nữ muốn tìm một nhóm việc đỡ mù mờ hơn các mô tả quá chung chung.
+                Nhóm quan tâm nhiều nhất là công nhân trẻ, lao động phổ thông cần tăng thu nhập, người từng làm nhà máy trong nước hoặc lao động nữ muốn một công việc dễ hình dung hơn.
               </p>
               <p>
-                Trước khi đăng ký, ứng viên nên hỏi rõ nhịp làm việc, ca kíp, môi trường xưởng, chỗ ở, phần việc chính và các yêu cầu về sức khỏe. Đây cũng là nhóm nội dung kéo tốt cho SEO vì khớp với truy vấn đời thường của người tìm kiếm.
+                Trước khi đăng ký, bạn nên hỏi rõ ca kíp, môi trường xưởng, chỗ ở, phần việc chính và yêu cầu sức khỏe. Hỏi càng cụ thể thì càng đỡ bị mơ hồ.
               </p>
             </div>
           </div>
@@ -472,9 +472,9 @@ export default function Home() {
             <div>
               <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
                 <Briefcase className="w-4 h-4 text-[#003a59]" />
-                <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Nhóm việc tham khảo</span>
+                <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Một số nhóm việc dễ hiểu</span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Công Việc <span className="text-[#00401e]">Dễ Hình Dung</span></h2>
+              <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">Đi Nga Làm <span className="text-[#00401e]">Những Việc Gì?</span></h2>
             </div>
             <Link to="/jobs">
               <Button variant="outline" className="rounded-full px-10 h-14 font-black uppercase tracking-widest border-[#003a59]/10 text-[#003a59] hover:bg-[#003a59] hover:text-white transition-all duration-500">
@@ -519,18 +519,18 @@ export default function Home() {
           <div className="text-center mb-24">
             <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
               <span className="w-2 h-2 bg-[#7efba4] rounded-full animate-pulse" />
-              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Khung quy trình</span>
+              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Quy trình đi Nga</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tighter leading-[0.9]">8 Bước <span className="text-[#00401e]">Chính</span></h2>
+            <h2 className="text-5xl md:text-7xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tighter leading-[0.9]">Quy Trình Đi Nga <span className="text-[#00401e]">Theo 8 Bước</span></h2>
             <p className="text-[#434653]/60 max-w-2xl mx-auto text-xl font-medium">
-              Từ đăng ký ban đầu đến thủ tục đầu vào sau khi sang Nga, người lao động nên hiểu trước khung quy trình để tránh mù mờ.
+              Từ lúc đăng ký đến lúc sang Nga làm thủ tục đầu vào, người lao động nên hiểu khung quy trình trước để đỡ bị mù mờ.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 relative">
             {[
-              { step: '01', title: 'Đăng ký', desc: 'Tiếp nhận nhu cầu và xét điều kiện hồ sơ ban đầu.', icon: <FileText className="w-8 h-8" /> },
-              { step: '02', title: 'Phỏng vấn', desc: 'Tham gia đánh giá và nhận thông báo trúng tuyển.', icon: <Users className="w-8 h-8" /> },
-              { step: '03', title: 'Hồ sơ & đào tạo', desc: 'Hoàn thiện hồ sơ đợt 1, học định hướng và tiếng Nga cơ bản.', icon: <GraduationCap className="w-8 h-8" /> },
+              { step: '01', title: 'Đăng ký', desc: 'Gửi nhu cầu, xét điều kiện hồ sơ ban đầu và chọn hướng phù hợp.', icon: <FileText className="w-8 h-8" /> },
+              { step: '02', title: 'Phỏng vấn', desc: 'Tham gia phỏng vấn, đánh giá và nhận thông báo trúng tuyển.', icon: <Users className="w-8 h-8" /> },
+              { step: '03', title: 'Hồ sơ và đào tạo', desc: 'Hoàn thiện hồ sơ đợt 1, học định hướng và tiếng Nga cơ bản trước khi đi.', icon: <GraduationCap className="w-8 h-8" /> },
               { step: '04', title: 'Xuất cảnh', desc: 'Bổ sung hồ sơ đợt 2, họp trước bay, trung chuyển và làm thủ tục đầu vào.', icon: <PlaneTakeoff className="w-8 h-8" /> },
             ].map((item, idx) => (
               <motion.div key={idx} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.15 }} className="relative z-10 bg-white p-12 rounded-[3rem] border border-[#003a59]/5 shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 group">
@@ -565,13 +565,13 @@ export default function Home() {
                     <CheckCircle className="w-12 h-12 text-[#00401e]" />
                   </div>
                   <h2 className="text-4xl font-black text-[#003a59] mb-6 font-['Manrope'] tracking-tight">Đã ghi nhận yêu cầu</h2>
-                  <p className="text-[#434653]/70 mb-10 text-lg leading-relaxed font-medium">Cảm ơn bạn đã để lại thông tin. Bộ phận tư vấn sẽ liên hệ để trao đổi thêm về hồ sơ, nhóm việc và lộ trình phù hợp.</p>
+                  <p className="text-[#434653]/70 mb-10 text-lg leading-relaxed font-medium">Cảm ơn bạn đã để lại thông tin. Bộ phận tư vấn sẽ liên hệ để trao đổi kỹ hơn về hồ sơ, nhóm việc và lộ trình phù hợp.</p>
                   <Button variant="primary" className="rounded-full px-12 h-16 font-black uppercase tracking-widest shadow-xl" onClick={() => setIsSuccess(false)}>Gửi yêu cầu khác</Button>
                 </motion.div>
               ) : (
                 <>
                   <h2 className="text-5xl font-black text-[#003a59] mb-6 font-['Manrope'] tracking-tight leading-[0.9]">Nhận Tư Vấn <br /><span className="text-[#00401e]">Theo Hồ Sơ Thật</span></h2>
-                  <p className="text-[#434653]/60 mb-12 text-xl font-medium">Điền thông tin để được tư vấn nhóm việc, điều kiện hồ sơ, chi phí theo giai đoạn và các lưu ý trước khi đi Nga.</p>
+                  <p className="text-[#434653]/60 mb-12 text-xl font-medium">Điền thông tin để được tư vấn hồ sơ, nhóm việc, chi phí theo từng giai đoạn và các lưu ý trước khi đi Nga.</p>
                   <form className="space-y-8" onSubmit={handleLeadSubmit}>
                     {!user && (
                       <div className="bg-[#003a59]/5 p-6 rounded-[1.5rem] border border-[#003a59]/10 mb-8">
@@ -629,7 +629,7 @@ export default function Home() {
               <img src="/images/worker-training.jpg" alt="Tư vấn hồ sơ và đào tạo trước khi đi Nga" className="w-full h-full object-cover opacity-40 grayscale" />
               <div className="absolute inset-0 flex flex-col justify-end p-20 text-white">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white/10 backdrop-blur-xl p-10 rounded-[3rem] border border-white/10 shadow-2xl">
-                  <p className="text-3xl font-black mb-8 leading-tight font-['Manrope'] tracking-tight">“Nội dung tốt không chỉ kéo lead, mà còn giúp người lao động hiểu mình đang chuẩn bị cho điều gì.”</p>
+                  <p className="text-3xl font-black mb-8 leading-tight font-['Manrope'] tracking-tight">“Đi xa không đáng sợ bằng đi mà không hiểu mình phải chuẩn bị những gì.”</p>
                   <div className="flex items-center gap-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-[#7efba4] to-[#00401e] rounded-2xl shadow-lg shadow-[#7efba4]/20" />
                     <div>
@@ -651,8 +651,8 @@ export default function Home() {
               <Info className="w-4 h-4 text-[#003a59]" />
               <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Câu hỏi thường gặp</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">Những Điều <span className="text-[#00401e]">Hay Được Hỏi</span></h2>
-            <p className="text-[#434653]/60 text-xl font-medium">Các câu hỏi dưới đây được viết theo nỗi lo phổ biến của người lao động và gia đình khi tìm hiểu thị trường Nga.</p>
+            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] mb-8 font-['Manrope'] tracking-tight">Câu Hỏi <span className="text-[#00401e]">Người Đi Nga Hay Hỏi</span></h2>
+            <p className="text-[#434653]/60 text-xl font-medium">Đây là những câu hỏi thực tế mà người lao động và gia đình thường hỏi trước khi quyết định đi Nga làm việc.</p>
           </div>
           <div className="space-y-6">
             {FAQS.map((faq, idx) => (
