@@ -139,7 +139,7 @@ export default function Profile() {
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
                         <div className="flex items-center gap-6">
                           <div className="w-20 h-20 rounded-2xl overflow-hidden shadow-lg shrink-0">
-                            <img src={job?.imageUrl || 'https://picsum.photos/seed/job/200/200'} alt={job?.title} className="w-full h-full object-cover" />
+                            <img src={job?.imageUrl || '/images/worker-group.jpg'} alt={job?.title} className="w-full h-full object-cover" />
                           </div>
                           <div>
                             <div className="flex items-center gap-3 mb-2">

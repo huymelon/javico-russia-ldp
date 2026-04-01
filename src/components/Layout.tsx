@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Anchor, ShieldCheck, Home, Briefcase, Scale, Info, Phone, Globe, Menu, X, LogIn, LogOut, User, FileText } from 'lucide-react';
+import { ShieldCheck, Home, Briefcase, Scale, Info, Phone, Globe, Menu, X, LogIn, LogOut, User, FileText } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/Button';
 import { useFirebase } from '../lib/FirebaseProvider';
@@ -27,9 +27,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-[#003a59]/5 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-[#003a59] rounded-xl flex items-center justify-center transition-transform group-hover:rotate-6 shadow-lg shadow-[#003a59]/20">
-              <Anchor className="w-6 h-6 text-white" />
-            </div>
+            <img src="/images/logo-square.webp" alt="JAVICO" className="w-10 h-10 rounded-xl object-cover shadow-lg shadow-[#003a59]/20 transition-transform group-hover:rotate-6" />
             <div className="flex flex-col">
               <span className="text-xl font-black text-[#003a59] font-['Manrope'] tracking-tight leading-none">JAVICO</span>
               <span className="text-[10px] font-black text-[#7efba4] uppercase tracking-[0.2em] mt-1 bg-[#003a59] px-1.5 py-0.5 rounded">Thị trường Nga</span>
@@ -156,9 +154,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
             <div className="lg:col-span-5">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center">
-                  <Anchor className="w-6 h-6 text-[#7efba4]" />
-                </div>
+                <img src="/images/logo-square.webp" alt="JAVICO" className="w-12 h-12 rounded-2xl object-cover bg-white/10 p-1" />
                 <div className="flex flex-col">
                   <span className="text-2xl font-black font-['Manrope'] tracking-tight">JAVICO</span>
                   <span className="text-[10px] font-black text-[#7efba4] uppercase tracking-[0.2em]">Japan core | Russia growth</span>

@@ -8,7 +8,7 @@ export default function About() {
     <div className="bg-[#f8fafb] min-h-screen pb-32">
       <section className="bg-[#003a59] pt-32 pb-48 px-6 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://picsum.photos/seed/russia/1920/1080" alt="Background" className="w-full h-full object-cover grayscale" referrerPolicy="no-referrer" />
+          <img src="/images/russia-hero.jpg" alt="Thị trường lao động Nga" className="w-full h-full object-cover grayscale" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#003a59] via-[#003a59]/80 to-[#003a59]" />
         </div>
         <div className="max-w-5xl mx-auto relative z-10 text-center">
@@ -119,8 +119,8 @@ export default function About() {
               </div>
             </div>
             <div className="flex-1 grid grid-cols-2 gap-4">
-              <img src="https://picsum.photos/seed/team1/400/500" alt="Tư vấn hồ sơ" className="rounded-2xl w-full h-64 object-cover shadow-xl" />
-              <img src="https://picsum.photos/seed/team2/400/500" alt="Hỗ trợ người lao động" className="rounded-2xl w-full h-64 object-cover shadow-xl mt-8" />
+              <img src="/images/worker-training.jpg" alt="Tư vấn hồ sơ đi Nga" className="rounded-2xl w-full h-64 object-cover shadow-xl" />
+              <img src="/images/worker-group.jpg" alt="Hỗ trợ người lao động và gia đình" className="rounded-2xl w-full h-64 object-cover shadow-xl mt-8" />
             </div>
           </div>
         </div>

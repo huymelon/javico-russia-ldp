@@ -25,7 +25,7 @@ export default function Jobs() {
     <div className="bg-[#f8fafb] min-h-screen">
       <section className="bg-[#003a59] pt-40 pb-48 px-6 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <img src="https://picsum.photos/seed/russia-factory/1920/1080" alt="Background" className="w-full h-full object-cover grayscale" referrerPolicy="no-referrer" />
+          <img src="/images/russia-hero.jpg" alt="Nhóm việc tại Nga" className="w-full h-full object-cover grayscale" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#003a59] via-[#003a59]/80 to-[#003a59]" />
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10">

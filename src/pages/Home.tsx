@@ -126,8 +126,7 @@ export default function Home() {
           <img
             alt="Russia industrial skyline"
             className="w-full h-full object-cover grayscale"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuClqWis5uH0TKamf_MRDbFNlN8M-rBlpbbxSwZ9U90MJZrZ_S-Puy2J4R2iXphu9VK05VOoHHT-Eu_fCezuCW7fH-vY5ilpo-QZSMnL18sY8_hiyVmJyYPKkfLlGuXsFxjD1veLIT_dMVcccK44Sj2cPrjCU_qN0JlSJW8iyp35aGLG3LvsOvQFVO1_Li7s-8TFA6c31Jpc3zpSsqbsk1PdscWgJiHrk2dCiPHhsi24taAuzaeYqnPZM7BWg-zPaUW89Ck2eYbQWaz7"
-            referrerPolicy="no-referrer"
+            src="/images/russia-hero.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#003a59] via-[#003a59]/80 to-[#003a59]" />
         </div>
@@ -157,7 +156,7 @@ export default function Home() {
           </div>
           <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4, duration: 0.8 }} className="hidden lg:block relative">
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white/5 aspect-[4/3]">
-              <img src="https://picsum.photos/seed/russia-job/800/600" alt="Người lao động chuẩn bị hồ sơ" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110" referrerPolicy="no-referrer" />
+              <img src="/images/worker-group.jpg" alt="Người lao động JAVICO chuẩn bị hồ sơ đi Nga" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#003a59]/60 to-transparent" />
             </div>
             <div className="absolute -bottom-10 -right-10 bg-white p-10 rounded-[2.5rem] shadow-2xl z-20 border border-[#003a59]/5">
@@ -254,7 +253,7 @@ export default function Home() {
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.8, rotate: 5 }} whileInView={{ opacity: 1, scale: 1, rotate: 0 }} viewport={{ once: true }} transition={{ duration: 1, type: 'spring' }} className="relative">
             <div className="rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,58,89,0.3)] aspect-[4/5] relative z-10 border-[12px] border-white">
-              <img src="https://picsum.photos/seed/moscow-view/800/1000" alt="Hình ảnh minh họa thị trường Nga" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110" referrerPolicy="no-referrer" />
+              <img src="/images/russia-city.png" alt="Hình ảnh thị trường và đời sống tại Nga" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#003a59] via-transparent to-transparent opacity-60" />
               <div className="absolute bottom-12 left-12 right-12 text-white">
                 <p className="text-6xl font-black mb-4 tracking-tighter">2026</p>
@@ -292,7 +291,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32 px-6 bg-[#f8fafb]">
+      <section id="dieukien" className="py-32 px-6 bg-[#f8fafb]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
@@ -323,7 +322,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32 px-6 bg-white">
+      <section id="chiphi" className="py-32 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
@@ -397,6 +396,72 @@ export default function Home() {
               <h3 className="text-3xl font-black text-[#003a59] mb-6 font-['Manrope'] tracking-tight">Nga</h3>
               <p className="text-[#434653]/70 leading-relaxed font-medium">Phù hợp với tệp đang tìm hiểu một hướng đi thực dụng hơn, cần nội dung rõ về hồ sơ, nhóm việc, chi phí theo giai đoạn và khả năng thích nghi sau nhập cảnh.</p>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-32 px-6 bg-[#f8fafb] border-y border-[#003a59]/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
+              <ShieldCheck className="w-4 h-4 text-[#003a59]" />
+              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Intent thực tế từ người tìm kiếm</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight">
+              Đi Nga Có <span className="text-[#00401e]">An Toàn Không</span> Và Ai Phù Hợp?
+            </h2>
+            <p className="text-[#434653]/60 text-xl font-medium max-w-3xl mx-auto mt-6">
+              Bộ từ khóa và các bài blog của JAVICO cho thấy người dùng không chỉ hỏi về lương. Họ hỏi rất đời thường: đi Nga có an toàn không, nữ đi Nga được không, và trước ngày bay phải chuẩn bị những gì.
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Đi Nga có an toàn không?',
+                desc: 'An toàn cần được nhìn theo nhiều lớp: đi đúng doanh nghiệp có giấy phép, hiểu rõ quy trình hồ sơ, tuân thủ sân bay, giữ giấy tờ cẩn thận và không tự ý đi cùng người lạ trong giai đoạn trung chuyển.',
+              },
+              {
+                title: 'Lao động nữ đi Nga được không?',
+                desc: 'Có thể phù hợp với một số nhóm việc như may mặc, hoàn thiện sản phẩm, đóng gói hoặc việc cần sự cẩn thận. Điều quan trọng là được tư vấn kỹ về môi trường, chỗ ở, ca làm và mức độ phù hợp với hồ sơ thực tế.',
+              },
+              {
+                title: 'Đi Nga cần chuẩn bị gì trước ngày bay?',
+                desc: 'Ngoài hồ sơ, người lao động nên chuẩn bị hành lý đúng định mức 23kg ký gửi và 7kg xách tay, đồ giữ ấm, vật dụng cá nhân cần thiết, đồng thời nắm trước những lưu ý ở sân bay Việt Nam và khi nhập cảnh.',
+              },
+            ].map((item) => (
+              <Card key={item.title} className="rounded-[3rem] border-none shadow-2xl shadow-[#003a59]/5 p-10 md:p-12">
+                <h3 className="text-2xl font-black text-[#003a59] mb-5 font-['Manrope'] tracking-tight">{item.title}</h3>
+                <p className="text-[#434653]/70 text-base leading-relaxed font-medium">{item.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-32 px-6 bg-white">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div className="rounded-[3rem] overflow-hidden shadow-2xl shadow-[#003a59]/10 border border-[#003a59]/5">
+            <img src="/images/worker-female.jpg" alt="Lao động nữ và nhóm việc nhà máy, đóng gói tại Nga" className="w-full h-full object-cover min-h-[520px]" />
+          </div>
+          <div>
+            <div className="inline-flex items-center gap-2 bg-[#003a59]/5 px-4 py-2 rounded-full mb-6">
+              <Briefcase className="w-4 h-4 text-[#003a59]" />
+              <span className="text-[10px] font-black text-[#003a59] uppercase tracking-widest">Keyword cụm đi Nga làm nhà máy</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-black text-[#003a59] font-['Manrope'] tracking-tight leading-[0.95]">
+              Đi Nga Làm <span className="text-[#00401e]">Nhà Máy</span>: Phù Hợp Với Ai?
+            </h2>
+            <div className="space-y-6 mt-8 text-[#434653]/75 text-lg leading-relaxed font-medium">
+              <p>
+                Đây là một trong những nhóm việc dễ hình dung nhất với người đang tìm hiểu lao động Nga. Công việc thường gắn với đóng gói, sản xuất phổ thông, hoàn thiện sản phẩm, làm theo dây chuyền hoặc theo định mức công việc rõ ràng.
+              </p>
+              <p>
+                Tệp quan tâm nhiều nhất là công nhân trẻ, lao động phổ thông cần tăng thu nhập, người từng làm nhà máy trong nước hoặc lao động nữ muốn tìm một nhóm việc đỡ mù mờ hơn các mô tả quá chung chung.
+              </p>
+              <p>
+                Trước khi đăng ký, ứng viên nên hỏi rõ nhịp làm việc, ca kíp, môi trường xưởng, chỗ ở, phần việc chính và các yêu cầu về sức khỏe. Đây cũng là nhóm nội dung kéo tốt cho SEO vì khớp với truy vấn đời thường của người tìm kiếm.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -561,7 +626,7 @@ export default function Home() {
               )}
             </div>
             <div className="hidden lg:block relative bg-[#00401e]">
-              <img src="https://picsum.photos/seed/consult/800/1200" alt="Tư vấn hồ sơ" className="w-full h-full object-cover opacity-40 grayscale" referrerPolicy="no-referrer" />
+              <img src="/images/worker-training.jpg" alt="Tư vấn hồ sơ và đào tạo trước khi đi Nga" className="w-full h-full object-cover opacity-40 grayscale" />
               <div className="absolute inset-0 flex flex-col justify-end p-20 text-white">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white/10 backdrop-blur-xl p-10 rounded-[3rem] border border-white/10 shadow-2xl">
                   <p className="text-3xl font-black mb-8 leading-tight font-['Manrope'] tracking-tight">“Nội dung tốt không chỉ kéo lead, mà còn giúp người lao động hiểu mình đang chuẩn bị cho điều gì.”</p>

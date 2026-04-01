@@ -19,8 +19,7 @@ export const JOBS: Job[] = [
     ],
     description:
       'Phù hợp với ứng viên muốn tìm hiểu nhóm việc cơ khí, hàn, lắp ráp hoặc vận hành tại Nga. Điều kiện và thu nhập sẽ được tư vấn theo từng đơn hàng cụ thể.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCqeNcXfBaeQlbdWZWwiDEUonVfyXwWoxGydl_VmGJCTfCJ3DMGwhgUXzse4XVhEMmKY4O7RVc8qwphEot7JKMvgJcLaw3QGIp39js2pdiZc3pxaSBo9Nm4FWW7B924HpB1abHSAsYP9EwKesGJHvSXXJE53i6hm81aEqRVnZZZdPE13PVUTMpRx4jOTBtlzxHuBK5SLVTjCvBEEPj73RRHAwNfD0wrJ96K9uTL3kBqJJUi8LU3gBBmgMHIAY1Lgoc8TJ9bEHFb8WXj',
+    imageUrl: '/images/worker-training.jpg',
     isHot: true,
   },
   {
@@ -41,8 +40,7 @@ export const JOBS: Job[] = [
     ],
     description:
       'Nhóm việc dành cho ứng viên quan tâm xưởng may, đóng gói, hoàn thiện sản phẩm hoặc các công đoạn tỉ mỉ trong nhà máy.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBcAZJZO1Seiz1-dDE4u8pN8oKNGrwsMeOzfAIseuXzHWN6Ic5juLnyTxXpOQR-cRYsVs0RXiMFZvntUjj1n0PqLXnuJsjoCFo7MIMVfc5DixIEOOVaFBEyIhIiF3ixJF913hAATRGQAA7gtkU3Kw5_SXQYSyubSAYGGrgiHK0LS2If9G7SA7lAC57MInmfYS5wmCfDc6CbuFgfvGtH8NzvvT1dFER0SYwfGaY7R-2IEe68d9mHjrselgMEp2M62l1xWmTX1A1U9vwG',
+    imageUrl: '/images/worker-female.jpg',
   },
   {
     id: '3',
@@ -62,8 +60,7 @@ export const JOBS: Job[] = [
     ],
     description:
       'Nhóm việc phù hợp với người muốn tìm hiểu môi trường nhà máy, đóng gói hoặc các công việc sản xuất phổ thông tại Nga.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBu22x4DpqhetUc_cTcvV2GTuPytHgWx-WeKKB2RG8kZrYjOSJ8PDeZGIyyp_npY4fdT9lJu_jUvJf1NpYpv3xSJaYIHHhIxZxTJYpgYAKEb0cZTkNEckMZPbitaohbAJTa4gdxCVvWDPJrWfSBivMSLr2qMgeSVuqDLSPDZXyyB2SCGFT-i2Md_rYR4yHZZy5c1gkQKKYISEnPx-IhCh8M9KOSA-ipwpNg2ZdcHUrdA6Q32c81hFm8zPSh73MwLq6YZdyppMv4c3tr',
+    imageUrl: '/images/worker-group.jpg',
   },
 ];
 
